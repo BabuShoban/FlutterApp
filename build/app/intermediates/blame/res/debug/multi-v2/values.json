@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/shobanbabumanohar/AndroidStudioProjects/vodqaapp/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/shobanbabumanohar/AndroidStudioProjects/FlutterApp/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/shobanbabumanohar/AndroidStudioProjects/vodqaapp/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/shobanbabumanohar/AndroidStudioProjects/FlutterApp/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,30 +1,48 @@
 
 import 'package:flutter/material.dart';
 
-class FirstPage extends StatelessWidget {
+import 'welcomePage.dart';
+
+class FirstPage extends StatefulWidget {
+  @override
+  _FirstPageState createState() => _FirstPageState();
+}
+
+class _FirstPageState extends State<FirstPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home : Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.teal,
-            leading: IconButton(icon: Icon(Icons.menu)),
-            title: Center(
-              child: Text('Home Page',style:TextStyle(
-                  fontSize: 20.0,
-                fontWeight: FontWeight.bold
-              ) ,
+            appBar: AppBar(
+              backgroundColor: Colors.teal,
+              leading: IconButton(icon: Icon(Icons.menu),
+                onPressed: (){},),
+              title: Center(
+                child: Text('Home Page',style:TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold
+                ) ,
+                ),
               ),
+              actions: <Widget>[
+                IconButton(icon: Icon(Icons.search),
+                  onPressed: (){
+                  },),
+                IconButton(icon: Icon(Icons.more_vert),
+                  onPressed: (){},)
+              ],
             ),
-            actions: <Widget>[
-              IconButton(icon: Icon(Icons.search),)
-            ],
-          ),
+            //body: welcomePage(),
             bottomNavigationBar: BottomNavigationBar(
-              fixedColor: Colors.teal,
+              backgroundColor: Colors.teal,
+              fixedColor: Colors.white,
               selectedFontSize: 15.0,
-              selectedIconTheme: IconThemeData(color: Colors.teal),
+              selectedIconTheme:
+                IconThemeData(
+                  color: Colors.white),
               iconSize: 25.0,
+              unselectedItemColor: Colors.white,
               items: const<BottomNavigationBarItem>[
                 BottomNavigationBarItem(
                   icon: Icon(Icons.home),
@@ -32,11 +50,11 @@ class FirstPage extends StatelessWidget {
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.account_circle),
-                  title: Text('Register'),
+                  title: Text('Profile'),
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.vpn_key),
-                  title: Text('Login'),
+                  icon: Icon(Icons.add_circle),
+                  title: Text('Register'),
                 ),
               ],
 
@@ -45,4 +63,5 @@ class FirstPage extends StatelessWidget {
     );
   }
 }
+
 
