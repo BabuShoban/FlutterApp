@@ -14,7 +14,6 @@ class _RegisterPageState extends State<RegisterPage> {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           resizeToAvoidBottomPadding: false,
-          //resizeToAvoidBottomInset: true,
           appBar: AppBar(
             backgroundColor: Colors.white,
             elevation: 0,
@@ -27,8 +26,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     MaterialPageRoute(builder: (context) => FirstPage()));
               },
             ),
-            title: Padding(
-              padding: const EdgeInsets.only(left: 70.0),
+            title: Center(
               child: Text(
                 'Register Page',
                 style: TextStyle(color: Colors.pink),

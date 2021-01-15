@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'welcomePage.dart';
 import 'package:vodqaapp/FirstPage.dart';
 import 'Resgister.dart';
+import 'WelcomePageViewer.dart';
 
 void main() {
   runApp(mainApp());
@@ -13,7 +14,8 @@ class mainApp  extends StatelessWidget {
     return  MaterialApp(
 
         debugShowCheckedModeBanner: false,
-        home : welcomePage()
+       // home : welcomePage()
+      home: PageViewer(),
        // home: FirstPage()
       // home: RegisterPage(),
     );
