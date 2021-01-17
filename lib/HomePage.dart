@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
           backgroundColor: Colors.white,
           leading: IconButton(
             icon: Icon(Icons.menu),
-            color: Colors.pink,
+            color:  Colors.deepOrange,
             onPressed: () {
               setState(() {
                 TextField();
@@ -29,19 +29,19 @@ class _HomePageState extends State<HomePage> {
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
-                color: Colors.pink,
+                color: Colors.deepOrange,
               ),
             ),
           ),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.search),
-              color: Colors.pink,
+              color:  Colors.deepOrange,
               onPressed: () {},
             ),
             IconButton(
               icon: Icon(Icons.more_vert),
-              color: Colors.pink,
+              color:  Colors.deepOrange,
               onPressed: () {},
             )
           ],

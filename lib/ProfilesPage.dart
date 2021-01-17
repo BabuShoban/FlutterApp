@@ -19,7 +19,7 @@ class _ProfilePageState extends State<ProfilePage> {
           elevation: 0,
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
-            color: Colors.pink,
+            color: Colors.deepOrange,
             iconSize: 25.0,
             onPressed: () {
               Navigator.push(context,
@@ -27,12 +27,19 @@ class _ProfilePageState extends State<ProfilePage> {
             },
           ),
           title: Padding(
-            padding: const EdgeInsets.only(left: 70.0),
+            padding: const EdgeInsets.only(right: 5.0),
             child: Text(
               'Profile Page',
-              style: TextStyle(color: Colors.pink),
+              style: TextStyle(color: Colors.deepOrange),
             ),
           ),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.more_vert),
+              color: Colors.deepOrange,
+              onPressed: () {},
+            )
+          ],
         ),
       ),
     );

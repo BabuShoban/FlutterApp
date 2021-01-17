@@ -9,23 +9,17 @@ class Contents {
 List<Contents> contents = [
   Contents(
       title: 'Welcome to VodQA Shop',
-      image: 'images/splash_1.png',
-      discription: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the "
-          "industry's standard dummy text ever since the 1500s, "
-          "when an unknown printer took a galley of type and scrambled it "
+      image: 'images/online_marketting.png',
+
   ),
   Contents(
       title: 'Faster Delivery',
-      image: 'images/splash_2.png',
-      discription: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the "
-          "industry's standard dummy text ever since the 1500s, "
-          "when an unknown printer took a galley of type and scrambled it "
+      image: 'images/fasterDelivery1.jpg',
+
   ),
   Contents(
-      title: 'Reward surprises',
-      image: 'images/splash_3.png',
-      discription: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the "
-          "industry's standard dummy text ever since the 1500s, "
-          "when an unknown printer took a galley of type and scrambled it "
+      title: 'Get more Rewards',
+      image: 'images/e-commerce.png',
+
   ),
 ];

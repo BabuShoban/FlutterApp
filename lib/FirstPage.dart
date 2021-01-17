@@ -31,12 +31,12 @@ class _FirstPageState extends State<FirstPage> {
           onTap: onTapped,
          currentIndex: _index,
           backgroundColor: Colors.white,
-          fixedColor: Colors.pink,
+          fixedColor:  Colors.deepOrange,
           elevation: 0,
-          selectedFontSize: 15.0,
-          selectedIconTheme: IconThemeData(color: Colors.pink),
+          selectedFontSize: 16.0,
+          selectedIconTheme: IconThemeData(color:  Colors.deepOrange),
           iconSize: 25.0,
-          unselectedItemColor: Colors.pink,
+          unselectedItemColor:  Colors.deepOrange,
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),

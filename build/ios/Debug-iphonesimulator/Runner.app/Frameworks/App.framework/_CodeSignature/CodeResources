@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		hj96X2Rw8ytw0PVjLa58zQkcMcU=
+		BoscTQkE3uoDVhSrfpru4Cv/LDE=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>flutter_assets/LICENSE</key>
 		<data>
-		hSDJKd/FB565+x8rlXgJ2LKvExw=
+		XbOo36gl6v421XT5RpL8zArif3w=
 		</data>
 		<key>flutter_assets/fonts/Langar-Regular.ttf</key>
 		<data>
@@ -44,6 +44,18 @@
 		<data>
 		+Y7PT4d3GsoyeUX4wyplGlHKe4E=
 		</data>
+		<key>flutter_assets/images/e-commerce.png</key>
+		<data>
+		HEYcHfw/v10U97dEDnVfWY5DItk=
+		</data>
+		<key>flutter_assets/images/fasterDelivery.png</key>
+		<data>
+		WzS9Y4LlyiuEeHNc7+30fXnamnk=
+		</data>
+		<key>flutter_assets/images/fasterDelivery1.jpg</key>
+		<data>
+		mHPzl6J7x7pZ9D8xLWmXFGjsnhc=
+		</data>
 		<key>flutter_assets/images/iPhone-x-png.png</key>
 		<data>
 		3CC2vNW1L7P/f7bsanpb0gDi13M=
@@ -55,6 +67,14 @@
 		<key>flutter_assets/images/iPhone8.png</key>
 		<data>
 		HIypvad4QzkUjKLMJYUYBvJMXwY=
+		</data>
+		<key>flutter_assets/images/online_marketting.png</key>
+		<data>
+		+W5CUinFZIXxdS4xLi0dU19M+f0=
+		</data>
+		<key>flutter_assets/images/rewardShopping.png</key>
+		<data>
+		kuN89UTdmK8OSehpTYIVClzm9rk=
 		</data>
 		<key>flutter_assets/images/samsung-galaxy-s10-plus.jpg</key>
 		<data>
@@ -90,7 +110,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		/Gn9XAeioGYhaJfCp7+UDyhOLyM=
+		ivks68fREs1n4+UbO6YmT7FEcuU=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -107,11 +127,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hj96X2Rw8ytw0PVjLa58zQkcMcU=
+			BoscTQkE3uoDVhSrfpru4Cv/LDE=
 			</data>
 			<key>hash2</key>
 			<data>
-			6W8ysUBKFyHUxKE84HQiUWV+lT9SGnAcWJ8G9K4sOOQ=
+			mXXIezTP1FoDmy3HTu5bT8k8ge5L97YBD9OW5JVgUnY=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -129,11 +149,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hSDJKd/FB565+x8rlXgJ2LKvExw=
+			XbOo36gl6v421XT5RpL8zArif3w=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ji/Zic+93lz9GG0VnjGf9gBe1tTuD/R2EvSbSeOkvP4=
+			Q/OHoekDDk6gomjfPCr16zx2VGjJ4AK0/+lRxUwJduE=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/Langar-Regular.ttf</key>
@@ -202,6 +222,39 @@
 			twN/CiYqVl0wU9BVNWIv+hZGZKEtf7G5hD7gtkiFe5s=
 			</data>
 		</dict>
+		<key>flutter_assets/images/e-commerce.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HEYcHfw/v10U97dEDnVfWY5DItk=
+			</data>
+			<key>hash2</key>
+			<data>
+			5m56cRXv0abcS2aXsKWkWMZWe0P9ErOtWnum54LuXAE=
+			</data>
+		</dict>
+		<key>flutter_assets/images/fasterDelivery.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WzS9Y4LlyiuEeHNc7+30fXnamnk=
+			</data>
+			<key>hash2</key>
+			<data>
+			6cqF8MgYSiBgsK2IEt0T62M0PrOIh59uVMeMhYMwL1A=
+			</data>
+		</dict>
+		<key>flutter_assets/images/fasterDelivery1.jpg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mHPzl6J7x7pZ9D8xLWmXFGjsnhc=
+			</data>
+			<key>hash2</key>
+			<data>
+			zv5ntCUnsK0VT8wApwc3dsOUOiDW/fj4fcPWZpRwh04=
+			</data>
+		</dict>
 		<key>flutter_assets/images/iPhone-x-png.png</key>
 		<dict>
 			<key>hash</key>
@@ -233,6 +286,28 @@
 			<key>hash2</key>
 			<data>
 			d8Oj3PmUAxWKEY9J1ZkYYHoDr1HYQzxc31afYh1Ttes=
+			</data>
+		</dict>
+		<key>flutter_assets/images/online_marketting.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+W5CUinFZIXxdS4xLi0dU19M+f0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Wa47tFtJANt7+2a9GqPYBXS10YsFU7k4qGsghelk6rc=
+			</data>
+		</dict>
+		<key>flutter_assets/images/rewardShopping.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kuN89UTdmK8OSehpTYIVClzm9rk=
+			</data>
+			<key>hash2</key>
+			<data>
+			J23Dohlu3sBlzHOlqTBmFMyzo547gxk9cswpViLGF3A=
 			</data>
 		</dict>
 		<key>flutter_assets/images/samsung-galaxy-s10-plus.jpg</key>
@@ -327,11 +402,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/Gn9XAeioGYhaJfCp7+UDyhOLyM=
+			ivks68fREs1n4+UbO6YmT7FEcuU=
 			</data>
 			<key>hash2</key>
 			<data>
-			aRN3WpKI0jYvU/tR9fOvE7q/bhuS/cKN6CaXXlOC8kY=
+			bjAH6BvMlf/QNiBC/+Oly+WI+5PT23njDu4symxuVWI=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
