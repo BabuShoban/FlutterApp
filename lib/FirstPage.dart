@@ -26,17 +26,16 @@ class _FirstPageState extends State<FirstPage> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: _children[_index],
-       // body: RegisterPage(),
         bottomNavigationBar: BottomNavigationBar(
           onTap: onTapped,
          currentIndex: _index,
           backgroundColor: Colors.white,
-          fixedColor:  Colors.deepOrange,
+          fixedColor: Colors.black,
           elevation: 0,
           selectedFontSize: 16.0,
-          selectedIconTheme: IconThemeData(color:  Colors.deepOrange),
-          iconSize: 25.0,
-          unselectedItemColor:  Colors.deepOrange,
+          selectedIconTheme: IconThemeData(color:  Colors.black),
+          iconSize: 20.0,
+          unselectedItemColor:  Colors.black,
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),

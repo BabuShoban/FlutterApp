@@ -56,6 +56,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "currency_icons",
+      "rootUri": "file:///Users/shobanbabumanohar/.pub-cache/hosted/pub.dartlang.org/currency_icons-0.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///Users/shobanbabumanohar/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -72,6 +78,18 @@
       "rootUri": "file:///Users/shobanbabumanohar/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "2.2"
+    },
+    {
+      "name": "http",
+      "rootUri": "file:///Users/shobanbabumanohar/.pub-cache/hosted/pub.dartlang.org/http-0.12.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///Users/shobanbabumanohar/.pub-cache/hosted/pub.dartlang.org/http_parser-3.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
     },
     {
       "name": "image",
@@ -108,6 +126,12 @@
       "rootUri": "file:///Users/shobanbabumanohar/.pub-cache/hosted/pub.dartlang.org/path_parsing-0.1.4",
       "packageUri": "lib/",
       "languageVersion": "1.19"
+    },
+    {
+      "name": "pedantic",
+      "rootUri": "file:///Users/shobanbabumanohar/.pub-cache/hosted/pub.dartlang.org/pedantic-1.9.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
     },
     {
       "name": "petitparser",
@@ -188,7 +212,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-01-15T13:17:18.218900Z",
+  "generated": "2021-01-26T06:27:38.046499Z",
   "generator": "pub",
   "generatorVersion": "2.8.2"
 }

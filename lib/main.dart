@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'HomePage.dart';
 import 'welcomePage.dart';
 import 'package:vodqaapp/FirstPage.dart';
 import 'Resgister.dart';
 import 'WelcomePageViewer.dart';
+import 'package:http/http.dart' as http;
 
 void main() {
   runApp(mainApp());
@@ -16,9 +18,11 @@ class mainApp  extends StatelessWidget {
         primarySwatch: Colors.deepOrange
       ),
         debugShowCheckedModeBanner: false,
-       // home : welcomePage()
+        //home : welcomePage()
       home: PageViewer(),
-       // home: FirstPage()
+
+       //home: HomePage(),
+
       // home: RegisterPage(),
     );
   }
