@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:vodqaapp/API/products_API.dart';
 import 'package:vodqaapp/Models/ProductsInfo.dart';
@@ -9,7 +11,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   Future<ProductModel> _productModel;
-
 
   @override
   void initState() {
@@ -23,7 +24,7 @@ class _HomePageState extends State<HomePage> {
       home: Scaffold(
         appBar: AppBar(
           elevation: 0,
-         backgroundColor: Colors.white,
+          backgroundColor: Colors.white,
           leading: IconButton(
             icon: Icon(Icons.menu),
             color: Colors.black,
@@ -37,11 +38,10 @@ class _HomePageState extends State<HomePage> {
             child: Text(
               'Home Page',
               style: TextStyle(
-                fontSize: 20.0,
-                fontFamily: 'Raleway' ,
-                fontWeight: FontWeight.bold,
-                color: Colors.black
-              ),
+                  fontSize: 20.0,
+                  fontFamily: 'Lancer',
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black),
             ),
           ),
           actions: <Widget>[
@@ -58,102 +58,134 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Container(
-              margin: EdgeInsets.all(10.0),
-              color: Colors.white,
-              child: Text(
-                'Welcome Mr. User',
-                style: TextStyle(
-                    fontFamily: 'Lancer',
-                    fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic,
-                    fontSize: 25.0,
-                   color: Colors.red
-                ),
-              ),
-            ),
-           Expanded(
-             child: Container(
+            // Container(
+            //   margin: EdgeInsets.all(10.0),
+            //   color: Colors.white,
+            //   child: Text(
+            //     'Welcome Mr. User',
+            //     style: Theme.of(context).textTheme.headline5.copyWith(
+            //         fontFamily: 'Lancer',
+            //         fontWeight: FontWeight.bold,
+            //         fontSize: 25.0,
+            //         color: Colors.red),
+            //   ),
+            // ),
+            Expanded(
+              child: Container(
                 child: FutureBuilder<ProductModel>(
                   future: _productModel,
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       return Padding(
-                        padding: EdgeInsets.all(20.0),
-                          child: GridView.builder(
-                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 2,
-                                mainAxisSpacing: 20.0,
-                                crossAxisSpacing: 20.0,
-                                childAspectRatio: 1),
-                            itemCount: snapshot.data.products.length,
-                            itemBuilder: (context, index) {
-                              var product = snapshot.data.products[index];
-                              var imageURL = product.thumbnail;
-                              return Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(20.0),
-                                ),
-                                height: 100.0,
+                        padding: EdgeInsets.all(10.0),
+                        child: GridView.builder(
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 2,
+                                  mainAxisSpacing: 10.0,
+                                  crossAxisSpacing: 10.0,
+                                  childAspectRatio: 1),
+                          itemCount: snapshot.data.products.length,
+                          itemBuilder: (context, index) {
+                            var product = snapshot.data.products[index];
+                            var imageURL = product.thumbnail;
+                            return Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                              height: 100.0,
+                              child: Column(
+                                children: <Widget>[
+                                  SizedBox(
+                                    height: 12,
+                                  ),
+                                  Expanded(
+                                    child: Image.network(imageURL),
+                                  ),
 
-                                child: Column(
-                                  children: <Widget>[
-                                    Expanded(
-                                      child: Image.network(imageURL),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 10.0),
+                                    child: Text(
+                                      product.title,
+                                      style: TextStyle(
+                                          fontFamily: 'Lancer',
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 13.0),
+                                      maxLines: 2,
+                                      softWrap: true,
+                                      overflow: TextOverflow.ellipsis,
                                     ),
-                                    SizedBox(
-                                      height: 10.0,
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top:5.0),
+                                      child: Text(
+                                      product.price.currentPrice
+                                          .toString()
+                                          .padRight(8, '0')
+                                          .padLeft(9, 'Rs '),
+                                      style: TextStyle(
+                                          fontFamily: 'Lancer',
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 13.0),
                                     ),
-                                    Expanded(
-                                      child: Padding(
-                                        padding: EdgeInsets.all(10.0),
-                                        child: Text(
-                                          product.title,
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Row(
+                                      children: <Widget>[
+                                        Padding(
+                                          padding: const EdgeInsets.only(left: 10),
+                                          child: Icon(
+                                            Icons.star,
+                                            size: 15.0,
+                                            color: Colors.teal,
+                                          ),
+                                        ),
+                                        Text(
+                                          product.reviews.rating.toString(),
                                           style: TextStyle(
                                               fontFamily: 'Lancer',
                                               fontWeight: FontWeight.bold,
-                                              fontSize: 15.0),
-                                          maxLines: 2,
-                                          softWrap: true,
-                                          overflow: TextOverflow.ellipsis,
+                                              fontSize: 12.0),
                                         ),
-                                      ),
-                                    ),
-                                    Expanded(
-                                      child: Padding(
-                                        padding: EdgeInsets.all(10.0),
-                                        child: Text(
-                                          product.price.currentPrice
-                                              .toString()
-                                              .padRight(8, '0').padLeft(9,'Rs '),
+                                        Padding(
+                                          padding: const EdgeInsets.only(left: 50),
+                                          child: Icon(
+                                            Icons.rate_review,
+                                            size: 15.0,
+                                            color: Colors.teal,
+                                          ),
+                                        ),
+                                        Text(
+                                          product.reviews.totalReviews.toString(),
                                           style: TextStyle(
                                               fontFamily: 'Lancer',
                                               fontWeight: FontWeight.bold,
-                                              fontSize: 15.0),
+                                              fontSize: 12.0),
                                         ),
-                                      ),
+                                      ],
                                     ),
-                                  ],
-                                ),
-                              );
-                            },
-                          ),
+                                  )
+                                ],
+                              ),
+                            );
+                          },
+                        ),
                       );
-                    } else if (snapshot.connectionState == ConnectionState.waiting) {
+                    } else if (snapshot.connectionState ==
+                        ConnectionState.waiting) {
                       return Center(child: CircularProgressIndicator());
                     } else {
                       print(snapshot.data);
                       return Center(child: CircularProgressIndicator());
                     }
                   },
-
+                ),
               ),
-          ),
-           ),
-        ],
+            ),
+          ],
         ),
       ),
     );
